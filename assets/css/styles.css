@@ -92,33 +92,34 @@ a {
   text-align: center;
   background-color: #cf000f;
   padding: 10px;
+  margin-bottom: 0px;
 }
-/* line 72, sass/partials/_base.scss */
+/* line 73, sass/partials/_base.scss */
 .footer_bar span {
   color: #f2f1ef;
   font-size: 12px;
   padding: 5px;
 }
-/* line 77, sass/partials/_base.scss */
+/* line 78, sass/partials/_base.scss */
 .footer_bar a {
   font-size: 12px;
   color: #f2f1ef;
 }
 
-/* line 83, sass/partials/_base.scss */
+/* line 84, sass/partials/_base.scss */
 .content {
   padding: 20px;
   margin: 20px 0;
   background-color: #f2f1ef;
 }
 
-/* line 89, sass/partials/_base.scss */
+/* line 90, sass/partials/_base.scss */
 .content_secondary {
   color: #f2f1ef;
   background-color: #96281b;
 }
 
-/* line 94, sass/partials/_base.scss */
+/* line 95, sass/partials/_base.scss */
 .content_tertiary {
   color: #f2f1ef;
   background-color: #cf000f;
@@ -127,22 +128,22 @@ a {
 /*
 ==================IMAGES NAVIGATION====================
 */
-/* line 103, sass/partials/_base.scss */
+/* line 104, sass/partials/_base.scss */
 img.logo {
   max-width: 20%;
 }
 
-/* line 107, sass/partials/_base.scss */
+/* line 108, sass/partials/_base.scss */
 img.main {
   max-width: 100%;
 }
 
-/* line 111, sass/partials/_base.scss */
+/* line 112, sass/partials/_base.scss */
 img.ri {
   max-width: 50%;
 }
 
-/* line 115, sass/partials/_base.scss */
+/* line 116, sass/partials/_base.scss */
 img.banner {
   max-width: 100%;
 }
@@ -151,45 +152,45 @@ img.banner {
 ==================TABLET BASICS====================
 */
 @media screen and (max-width: 968px) {
-  /* line 124, sass/partials/_base.scss */
+  /* line 125, sass/partials/_base.scss */
   h1 {
-    color: #dadfe1;
+    color: #2c3e50;
     font-size: 2em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 130, sass/partials/_base.scss */
+  /* line 131, sass/partials/_base.scss */
   h2 {
     font-size: 1.5em;
   }
 
-  /* line 133, sass/partials/_base.scss */
+  /* line 134, sass/partials/_base.scss */
   h3 {
     font-size: 1em;
   }
 
-  /* line 136, sass/partials/_base.scss */
+  /* line 137, sass/partials/_base.scss */
   .nav li a {
     font-size: 0.75em;
   }
 
-  /* line 139, sass/partials/_base.scss */
+  /* line 140, sass/partials/_base.scss */
   p {
     font-size: 1em;
   }
 
-  /* line 142, sass/partials/_base.scss */
+  /* line 143, sass/partials/_base.scss */
   .italics {
     font-size: 0.9em;
   }
 
-  /* line 145, sass/partials/_base.scss */
+  /* line 146, sass/partials/_base.scss */
   a {
     padding: 10px 20px;
   }
 
-  /* line 148, sass/partials/_base.scss */
+  /* line 149, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -200,25 +201,25 @@ img.banner {
 ==================MOBILE BASICS====================
 */
 @media screen and (max-width: 640px) {
-  /* line 160, sass/partials/_base.scss */
+  /* line 161, sass/partials/_base.scss */
   h1 {
-    color: #dadfe1;
-    font-size: 2em;
+    color: #2c3e50;
+    font-size: 1.5em;
     padding: 0px;
     margin: 0px;
   }
 
-  /* line 166, sass/partials/_base.scss */
+  /* line 167, sass/partials/_base.scss */
   p {
     font-size: 1.0em;
   }
 
-  /* line 169, sass/partials/_base.scss */
+  /* line 170, sass/partials/_base.scss */
   img.logo {
     max-width: 40%;
   }
 
-  /* line 172, sass/partials/_base.scss */
+  /* line 173, sass/partials/_base.scss */
   .wrapper {
     position: relative;
     margin: 0 auto;
@@ -416,7 +417,7 @@ img.banner {
   color: #f2f1ef;
   position: absolute;
   font-size: 1.5em;
-  padding: 0 0.5em;
+  padding: 0.25em 0.5em;
   background-color: #96281b;
 }
 /* line 53, sass/partials/_navigation.scss */
