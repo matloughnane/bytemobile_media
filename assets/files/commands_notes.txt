@@ -1,0 +1,62 @@
+Commands and Scripts
+
+
+---------------------------------------------------------------------------
+
+sdblist replacement
+
+-------------------------
+
+script
+
+for ip in `echo "stat -a" |/opt/bmi/node/bin/cmdexec sam |grep -i OSN |awk '{print $1}' |egrep "[0-9]\." |sort -u`
+do 
+echo $ip
+ping $ip 1 > /dev/null && ssh `cat /opt/bmi/etc/cluster/.config/OSN_USER`@$ip '/opt/sfw/bin/sudo tail -1000 /opt/bmi/var/log/webgrp/web_access.log |grep 447730527356
+echo
+done
+
+-------------------------
+
+/export/home/csmuser/cluster_checks/ksh run_command_on_osn.ksh -c 'tail -250 /opt/bmi/var/log/webgrp/web_access.log | grep 447730527356’
+
+---------------------------------------------------------------------------
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, volutpat ac vulputate at, fermentum id mauris. Donec vitae leo diam. Morbi ultricies leo a scelerisque blandit. Fusce dignissim consectetur pellentesque. Curabitur pharetra fringilla odio, quis lacinia odio rutrum sit amet. Sed ligula purus, cursus eget metus eget, iaculis egestas elit. Vestibulum malesuada commodo nisl vitae eleifend. Vestibulum lorem lectus, vehicula ac molestie eu, commodo eget massa. In augue enim, accumsan ac turpis et, tristique varius ligula.
+
+    Sed tempus nibh at elit bibendum posuere. Etiam diam nulla, vulputate quis magna id, convallis mollis tortor. Maecenas sollicitudin magna vel nunc viverra, id venenatis ligula rutrum. Maecenas vulputate lobortis sem vitae fringilla. Pellentesque dolor mi, dignissim vitae facilisis molestie, fermentum ut orci. Etiam bibendum pellentesque auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sollicitudin, mauris nec imperdiet sollicitudin, magna nisl sodales enim, ut facilisis odio massa ac nulla.
+
+    In rhoncus nulla et quam porttitor ornare. Praesent metus sem, mattis quis tempor sed, suscipit id risus. Sed adipiscing aliquet nisi, bibendum auctor neque. Proin eget ante et magna semper pharetra ut at leo. Integer lacus tortor, dapibus sit amet neque non, hendrerit sollicitudin quam. Cras ante risus, ultrices sed egestas nec, vestibulum a turpis. Aliquam vehicula, libero aliquam ultrices fermentum, tortor dolor tempor enim, ac pellentesque dui quam eget mi. Vivamus euismod interdum nibh, vel porta magna pulvinar et. In hac habitasse platea dictumst. Morbi quis pharetra nibh. Aliquam rutrum est tincidunt augue condimentum volutpat. Duis sit amet mi est.
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, volutpat ac vulputate at, fermentum id mauris. Donec vitae leo diam. Morbi ultricies leo a scelerisque blandit. Fusce dignissim consectetur pellentesque. Curabitur pharetra fringilla odio, quis lacinia odio rutrum sit amet. Sed ligula purus, cursus eget metus eget, iaculis egestas elit. Vestibulum malesuada commodo nisl vitae eleifend. Vestibulum lorem lectus, vehicula ac molestie eu, commodo eget massa. In augue enim, accumsan ac turpis et, tristique varius ligula.
+
+    Sed tempus nibh at elit bibendum posuere. Etiam diam nulla, vulputate quis magna id, convallis mollis tortor. Maecenas sollicitudin magna vel nunc viverra, id venenatis ligula rutrum. Maecenas vulputate lobortis sem vitae fringilla. Pellentesque dolor mi, dignissim vitae facilisis molestie, fermentum ut orci. Etiam bibendum pellentesque auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sollicitudin, mauris nec imperdiet sollicitudin, magna nisl sodales enim, ut facilisis odio massa ac nulla.
+
+    In rhoncus nulla et quam porttitor ornare. Praesent metus sem, mattis quis tempor sed, suscipit id risus. Sed adipiscing aliquet nisi, bibendum auctor neque. Proin eget ante et magna semper pharetra ut at leo. Integer lacus tortor, dapibus sit amet neque non, hendrerit sollicitudin quam. Cras ante risus, ultrices sed egestas nec, vestibulum a turpis. Aliquam vehicula, libero aliquam ultrices fermentum, tortor dolor tempor enim, ac pellentesque dui quam eget mi. Vivamus euismod interdum nibh, vel porta magna pulvinar et. In hac habitasse platea dictumst. Morbi quis pharetra nibh. Aliquam rutrum est tincidunt augue condimentum volutpat. Duis sit amet mi est.
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, volutpat ac vulputate at, fermentum id mauris. Donec vitae leo diam. Morbi ultricies leo a scelerisque blandit. Fusce dignissim consectetur pellentesque. Curabitur pharetra fringilla odio, quis lacinia odio rutrum sit amet. Sed ligula purus, cursus eget metus eget, iaculis egestas elit. Vestibulum malesuada commodo nisl vitae eleifend. Vestibulum lorem lectus, vehicula ac molestie eu, commodo eget massa. In augue enim, accumsan ac turpis et, tristique varius ligula.
+
+    Sed tempus nibh at elit bibendum posuere. Etiam diam nulla, vulputate quis magna id, convallis mollis tortor. Maecenas sollicitudin magna vel nunc viverra, id venenatis ligula rutrum. Maecenas vulputate lobortis sem vitae fringilla. Pellentesque dolor mi, dignissim vitae facilisis molestie, fermentum ut orci. Etiam bibendum pellentesque auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sollicitudin, mauris nec imperdiet sollicitudin, magna nisl sodales enim, ut facilisis odio massa ac nulla.
+
+    In rhoncus nulla et quam porttitor ornare. Praesent metus sem, mattis quis tempor sed, suscipit id risus. Sed adipiscing aliquet nisi, bibendum auctor neque. Proin eget ante et magna semper pharetra ut at leo. Integer lacus tortor, dapibus sit amet neque non, hendrerit sollicitudin quam. Cras ante risus, ultrices sed egestas nec, vestibulum a turpis. Aliquam vehicula, libero aliquam ultrices fermentum, tortor dolor tempor enim, ac pellentesque dui quam eget mi. Vivamus euismod interdum nibh, vel porta magna pulvinar et. In hac habitasse platea dictumst. Morbi quis pharetra nibh. Aliquam rutrum est tincidunt augue condimentum volutpat. Duis sit amet mi est.
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, volutpat ac vulputate at, fermentum id mauris. Donec vitae leo diam. Morbi ultricies leo a scelerisque blandit. Fusce dignissim consectetur pellentesque. Curabitur pharetra fringilla odio, quis lacinia odio rutrum sit amet. Sed ligula purus, cursus eget metus eget, iaculis egestas elit. Vestibulum malesuada commodo nisl vitae eleifend. Vestibulum lorem lectus, vehicula ac molestie eu, commodo eget massa. In augue enim, accumsan ac turpis et, tristique varius ligula.
+
+    Sed tempus nibh at elit bibendum posuere. Etiam diam nulla, vulputate quis magna id, convallis mollis tortor. Maecenas sollicitudin magna vel nunc viverra, id venenatis ligula rutrum. Maecenas vulputate lobortis sem vitae fringilla. Pellentesque dolor mi, dignissim vitae facilisis molestie, fermentum ut orci. Etiam bibendum pellentesque auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sollicitudin, mauris nec imperdiet sollicitudin, magna nisl sodales enim, ut facilisis odio massa ac nulla.
+
+    In rhoncus nulla et quam porttitor ornare. Praesent metus sem, mattis quis tempor sed, suscipit id risus. Sed adipiscing aliquet nisi, bibendum auctor neque. Proin eget ante et magna semper pharetra ut at leo. Integer lacus tortor, dapibus sit amet neque non, hendrerit sollicitudin quam. Cras ante risus, ultrices sed egestas nec, vestibulum a turpis. Aliquam vehicula, libero aliquam ultrices fermentum, tortor dolor tempor enim, ac pellentesque dui quam eget mi. Vivamus euismod interdum nibh, vel porta magna pulvinar et. In hac habitasse platea dictumst. Morbi quis pharetra nibh. Aliquam rutrum est tincidunt augue condimentum volutpat. Duis sit amet mi est.
+
+---------------------------------------------------------------------------

@@ -1,154 +1,93 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html5>
+<html>
   <head>
     <meta charset="utf-8">
     <title>Byte Mobile Media</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- css and formatting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gridism.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">  
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+    <script src="assets/js/bigSlide.min.js"></script>
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
+<!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
 
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 100px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
+    <link rel="shortcut icon" href="old/assets/ico/favicon.png">
 
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-    </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
-
-    <div class="container">
-
-      <div class="masthead">
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="video/videoF4V.html">Flash Videos</a></li>
-                <li><a href="video/videoHTML5.html">HTML5 Videos</a></li>
-                <li><a href="sounds/sounds.html">Sounds</a></li>
-              </ul>
-            </div>
+<body class="wrapper push">
+ 
+<div class="wrap whole">
+  <div class="grid">
+    <a href="#menu" class="menu-link pull-left hide-until-mobiles"></a>
+    <div class="unit one-third align-right center-on-mobiles"><img class="ri" src="assets/img/byte_logo.png"> </div>
+    <div class="unit two-thirds align-center title"><h1>Bytemobile Test</h1></div>
+  </div>
+</div>
+<!-- NAV MENUS -->
+<div class="wrap grid whole">
+  <nav id="menu" class="panel" role="navigation">
+        <ul>
+            <li><a class="nav_link" href="index.html">Home</a></li>
+            <li><a class="nav_link" href="old/video/videoF4V.html">Flash Videos (old)</a></li>
+            <li><a class="nav_link" href="html5.html">HTML5 Videos</a></li>
+            <li><a class="nav_link" href="audio.html">Audio</a></li>
+        </ul>
+  </nav>
+    <div class="full_bar">
+          <div class="nav hide-on-mobiles">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="old/video/videoF4V.html">Flash Videos (old)</a></li>
+              <li><a href="html5.html">HTML5 Videos</a></li>
+              <li><a href="audio.html">Audio</a></li>
+            </ul>
           </div>
-        </div><!-- /.navbar -->
       </div>
+</div>
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
+<div class="wrap grid whole">
+  <div class="content">
+    <h2>HTML Tests</h2>
+    <h3>Inlining</h3>
+    <p>No javascript or css files scripts are inlined</p>
 
-        <h1>Byte Mobile Media</h1>
-        <a class="btn btn-large btn-danger" href="video/videoF4V.html">Flash Video</a>
-        <a class="btn btn-large btn-danger" href="video/videoHTML5.html">HTML5 Video</a>
-        <a class="btn btn-large btn-danger" href="cache_tests/cache_test.html">Cache Videos</a>
-        <a class="btn btn-large btn-danger" href="sounds/sounds.html">ADTS sound files</a>
-      </div>
+    <h2>Comments removed</h2>
+    <p>In source code there are 3 paragraphs of comments, should be filtered out by optimization functionality</p>
+    <hr>
+    <p>Comments start in source code</p>
+    <!-- COMMENTS -->
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque augue ipsum, volutpat ac vulputate at, fermentum id mauris. Donec vitae leo diam. Morbi ultricies leo a scelerisque blandit. Fusce dignissim consectetur pellentesque. Curabitur pharetra fringilla odio, quis lacinia odio rutrum sit amet. Sed ligula purus, cursus eget metus eget, iaculis egestas elit. Vestibulum malesuada commodo nisl vitae eleifend. Vestibulum lorem lectus, vehicula ac molestie eu, commodo eget massa. In augue enim, accumsan ac turpis et, tristique varius ligula.
 
-      <hr>
+    Sed tempus nibh at elit bibendum posuere. Etiam diam nulla, vulputate quis magna id, convallis mollis tortor. Maecenas sollicitudin magna vel nunc viverra, id venenatis ligula rutrum. Maecenas vulputate lobortis sem vitae fringilla. Pellentesque dolor mi, dignissim vitae facilisis molestie, fermentum ut orci. Etiam bibendum pellentesque auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sollicitudin, mauris nec imperdiet sollicitudin, magna nisl sodales enim, ut facilisis odio massa ac nulla.
 
-      <div class="footer">
-        <p>&copy; Bytemobile 2013</p>
-      </div>
+    In rhoncus nulla et quam porttitor ornare. Praesent metus sem, mattis quis tempor sed, suscipit id risus. Sed adipiscing aliquet nisi, bibendum auctor neque. Proin eget ante et magna semper pharetra ut at leo. Integer lacus tortor, dapibus sit amet neque non, hendrerit sollicitudin quam. Cras ante risus, ultrices sed egestas nec, vestibulum a turpis. Aliquam vehicula, libero aliquam ultrices fermentum, tortor dolor tempor enim, ac pellentesque dui quam eget mi. Vivamus euismod interdum nibh, vel porta magna pulvinar et. In hac habitasse platea dictumst. Morbi quis pharetra nibh. Aliquam rutrum est tincidunt augue condimentum volutpat. Duis sit amet mi est. -->
+    <p>End comments</p>
+    <hr>
+    <h2>HTML Downloads</h2>
+      <p>Downloads for GZIP optimization checks</p>
+      <div class="btn dark_highlight"><a href="assets/files/commands_notes.txt" target="_blank">TXT</a></div>
+      <div class="btn dark_highlight"><a href="assets/files/image_resizing_lab.docx" target="_blank">DOC</a></div>
+      <div class="btn dark_highlight"><a href="assets/files/R7_sample.xlsx" target="_blank">XLS</a></div>
+      <div class="btn dark_highlight"><a href="assets/files/rtmp_specification_1.0.pdf" target="_blank">PDF</a></div>
+      <div class="btn dark_highlight"><a href="assets/files/T3100_tips.pptx" target="_blank">PPT</a></div>
+    <h2>Throttling Downloads (500MB+)</h2>
+      <p>Downloads for throttling traffic or downloading large files.</p>
+      <div class="btn default"><a href="assets/files/512MB.zip" target="_blank">500MB.zip</a></div>
+      <div class="btn default"><a href="assets/files/1GB.zip" target="_blank">1GB.zip</a></div>
+  </div>
+</div>
 
-    </div> <!-- /container -->
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+</body>
 
-  </body>
 </html>
