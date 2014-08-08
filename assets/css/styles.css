@@ -130,7 +130,7 @@ a {
 */
 /* line 104, sass/partials/_base.scss */
 img.logo {
-  max-width: 20%;
+  max-width: 100%;
 }
 
 /* line 108, sass/partials/_base.scss */
@@ -140,7 +140,7 @@ img.main {
 
 /* line 112, sass/partials/_base.scss */
 img.ri {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 /* line 116, sass/partials/_base.scss */
