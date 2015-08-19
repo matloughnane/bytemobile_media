@@ -5,6 +5,9 @@
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
+::selection {
+	background-color:$main_color_accent_opp_trans;
+}
 
 // BASIC FORMATTING
 body {
@@ -17,6 +20,11 @@ h1 {
 	color: $bkg_dark;
 	font-size: 3em;
 	padding: 10px;
+}
+
+h2 {
+	font-size: 2em;
+	color: $main_color_dark;
 }
 
 h4 {
@@ -83,7 +91,7 @@ a {
 
 .content {
 	padding: 20px;
-	margin: 20px 0;
+	margin: 10px 0;
 	background-color: $bkg_color_lighter;
 }
 
